@@ -176,7 +176,7 @@ select {
   width: 80vw;
 }
 body > h2 {
-  font-size: 30px;
+  font-size: 40px;
   color: #242565;
   margin-top: 50px;
 }
@@ -184,10 +184,11 @@ body > p {
   font-size: smaller;
   color: #242565;
 }
-.blogcard h3 {
+
+
+.blogcardcontent h3 {
   color: #242565;
   font-size: large;
-  box-shadow: 0 0 10px rgb(215, 214, 214);
 }
 footer {
   width: 100vw;

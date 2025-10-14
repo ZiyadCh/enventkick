@@ -129,13 +129,14 @@ select {
 }
 .card {
   border-radius: 25px;
-  width: min-content;
-  box-shadow: 0 0 10px rgb(215, 214, 214);
+  width: min-content ;
+  box-shadow: 0 0 10px gray;
 }
 .cardcontent {
-  display: grid;
-  grid-template-columns: 15% 80%;
-  grid-row-gap: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
 }
 .cardgrid {
   width: 100vw;
@@ -165,7 +166,7 @@ select {
   width: 80vw;
   display: grid;
   grid-template-rows: 100px 100px;
-  grid-template-columns: repeat(5, 20%);
+  grid-template-columns: 20% 20% 20% 20% 20%;
   align-items: center;
 }
 .b2 {

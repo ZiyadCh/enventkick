@@ -195,7 +195,7 @@ footer {
   background-color: #0a075f;
   color: white;
   display: grid;
-  grid-template-columns: repeat(4, 20%);
+  grid-template-columns: 20% 20% 20% 20%;
   grid-template-rows: 10% 20%;
   justify-content: center;
   padding-top: 10%;

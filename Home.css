@@ -131,7 +131,6 @@ select {
   font-size: 45px;
 }
 .card {
-  
   border-radius: 25px;
   width: min-content;
   box-shadow: 0 0 10px rgb(215, 214, 214);
@@ -147,7 +146,6 @@ select {
   gap: 30px;
   display: grid;
   grid-template-columns: min-content min-content min-content;
-  
 }
 .more {
   margin: 10px;
@@ -166,7 +164,7 @@ select {
   color: white;
 }
 .brands {
-    margin-top: 30px;
+  margin-top: 30px;
   width: 80vw;
   display: grid;
   grid-template-rows: 100px 100px;
@@ -179,48 +177,46 @@ select {
   align-items: center;
   width: 80vw;
 }
-body > h2{
-    font-size: 30px;color: #242565;margin-top: 50px;
+body > h2 {
+  font-size: 30px;
+  color: #242565;
+  margin-top: 50px;
 }
-body > p{
-    font-size: smaller;color: #242565;
+body > p {
+  font-size: smaller;
+  color: #242565;
 }
-.blogcard h3{
-color: #242565;
-font-size: large;
- box-shadow: 0 0 10px rgb(215, 214, 214);
+.blogcard h3 {
+  color: #242565;
+  font-size: large;
+  
 }
-footer{
+footer {
   width: 100vw;
   height: 300px;
-  background-color: #0A075F;
+  background-color: #0a075f;
   color: white;
   display: grid;
   grid-template-columns: 20% 20% 20% 20%;
   grid-template-rows: 10% 20%;
   justify-content: center;
-  padding-top:10%;  
+  padding-top: 10%;
 }
-footer input{
-  border-radius:50px;
+footer input {
   padding: 30px;
   border: none;
-
 }
-footer button{
+footer button {
   background-color: #f5167e;
   border: none;
-  border-radius: 50px;
-  
-  
 }
-.imag{
-  margin-top:100px;
+.imag {
+  margin-top: 100px;
 }
 span {
   margin: 20px;
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   align-items: flex-end;
   width: 50vw;
 }

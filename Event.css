@@ -1,0 +1,18 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&display=swap');
+
+.hero img{
+    z-index: -1;
+}
+.hero{
+    background-image: linear-gradient(to bottom right, #5FEE17e8,#0027D5e8);
+    width: 100vw;
+}
+.hero h1{
+    color: white;
+    font-size: 300px;
+    font-family: 'Edu VIC WA NT Beginner';
+}
+footer{
+   
+}

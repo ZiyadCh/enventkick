@@ -110,18 +110,24 @@ select {
   font-size: larger;
 }
 .event {
-  height: 100vh;
+  height: max-content;
   width: 100vw;
   margin: 10%;
 }
 .event nav {
   display: flex;
   justify-content: space-evenly;
+  margin: 20px;
 }
 .event select {
   color: #242565;
   border: none;
   font-size: smaller;
+  background-color: #F2F4FF;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 100px;
+  width: 115px;
 }
 .event h2 {
   color: #242565;
@@ -147,7 +153,6 @@ select {
 }
 .more {
   margin: 10px;
-  padding: 15px;
   border-radius: 50px;
   border: solid 1px #242565;
   background-color: transparent;
@@ -160,7 +165,16 @@ select {
 .more:hover {
   background: #242565;
   color: white;
+  
 }
+.more a{
+  padding: 30px;
+  color: #242565;
+}
+.more a:hover{
+  color: white;
+}
+
 .brands {
   margin-top: 30px;
   width: 80vw;
@@ -196,10 +210,10 @@ footer {
   background-color: #0a075f;
   color: white;
   display: grid;
-  grid-template-columns: 20% 20% 20% 20%;
+  grid-template-columns: 30% 20% 20% 20%;
   grid-template-rows: 10% 20%;
   justify-content: center;
-  padding-top: 10%;
+  padding-top: 5%;
 }
 footer input {
   margin-top: 5px;
@@ -226,4 +240,5 @@ span {
   justify-content: space-between;
   align-items: flex-end;
   width: 50vw;
+  bottom: 0;
 }

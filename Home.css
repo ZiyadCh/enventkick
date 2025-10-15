@@ -127,7 +127,7 @@ select {
   padding-left: 20px;
   padding-right: 20px;
   border-radius: 100px;
-  width: 115px;
+  width: 120px;
 }
 .event h2 {
   color: #242565;
@@ -137,12 +137,19 @@ select {
   border-radius: 25px;
   width: min-content ;
   box-shadow: 0 0 10px gray;
+  overflow: hidden;
+   transition: 0.4s;
+}
+
+.card:hover{
+  transform:translateY(-10px);
 }
 .cardcontent {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 5px;
+  z-index: 1;
 }
 .cardgrid {
   width: 100vw;
@@ -150,6 +157,7 @@ select {
   gap: 30px;
   display: grid;
   grid-template-columns: min-content min-content min-content;
+  
 }
 .more {
   margin: 10px;

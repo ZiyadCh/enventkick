@@ -5,7 +5,7 @@
     z-index: -1;
 }
 .hero{
-    background-image: linear-gradient(to bottom right, #5FEE17e8,#0027D5e8);
+    background-image: linear-gradient(to bottom right, #ED4646e9,#B0CC22e9);
     width: 100vw;
 }
 .hero h1{
@@ -13,6 +13,6 @@
     font-size: 300px;
     font-family: 'Edu VIC WA NT Beginner';
 }
-footer{
-   
+header button:hover{
+    color: orange;
 }

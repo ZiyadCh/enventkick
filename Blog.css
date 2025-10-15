@@ -1,0 +1,30 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&display=swap');
+.hero{
+    background-image: linear-gradient(to bottom right, #5FEE17e9,#0027D5f9);
+    width: 100vw;
+}
+.hero h1{
+    color: white;
+    font-size: 300px;
+    font-family: 'Edu VIC WA NT Beginner';
+}
+.hero img{
+    height: 100%;
+    top: 0;
+}
+header button:hover{
+    color: skyblue;
+}
+.cardgrid{
+    display: flex;
+    justify-content: center;align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.blogcard{
+
+}
+.card img{
+  object-fit: fill;
+}

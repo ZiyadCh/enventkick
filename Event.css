@@ -13,6 +13,10 @@
     font-size: 300px;
     font-family: 'Edu VIC WA NT Beginner';
 }
-header button:hover{
-    color: orange;
+
+header button a{
+  padding: 30px;
+}
+header button a:hover{
+  color: orange;
 }

@@ -60,6 +60,12 @@ header button:hover {
   background-color: white;
   color: purple;
 }
+header button a{
+  padding: 30px;
+}
+header button a:hover{
+  color: #0a075f;
+}
 .welcome {
   display: flex;
   justify-content: center;
@@ -182,21 +188,46 @@ select {
 .more a:hover{
   color: white;
 }
-
-.brands {
+/* logos animation
+///////////////////*/
+.wrap{
+  width: 70%;
+  overflow: hidden;
+  box-shadow: inset 0 0 50px gainsboro;
+  
+}
+.brands  {
+  margin: 15px;
   margin-top: 30px;
   width: 80vw;
-  display: grid;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 55px;
   grid-template-rows: 100px 100px;
   grid-template-columns: 20% 20% 20% 20% 20%;
   align-items: center;
+  animation: carousel 5s linear infinite ;
 }
-.b2 {
+/* .b2 {
   display: flex;
   justify-content: space-around;
   align-items: center;
   width: 80vw;
+  animation: carousel 10s reverse infinite ;
+} */
+
+@keyframes carousel{
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(-100%);
+  }
 }
+/* logos animation
+///////////////////*/
+
+
 body > h2 {
   font-size: 40px;
   color: #242565;

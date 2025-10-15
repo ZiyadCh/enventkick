@@ -1,0 +1,45 @@
+.hero{
+  background-image: linear-gradient(to bottom right, #ed4691 , #5522cc 60%);
+    width: 100vw;
+}
+form{
+    background: white;
+    width: 70%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:center;
+    border-radius: 50px;
+    padding: 20px;
+}
+form h1{
+    color: #242565;
+    font-weight: normal;
+    font-size: 64px;
+}
+form input{
+padding: 20px;
+width: 70%;
+border-radius: 50px;
+border: solid black 1px;
+}form input::placeholder{
+    color: black;
+    font-size: larger;
+}
+
+form button{
+    padding: 10px;
+    border-radius: 50px;
+    background-color: transparent;
+    color: #242565;
+    border: #242565 solid 1px;
+    width: 200px;
+    font-weight: lighter;
+    font-size: 40px;
+    transition: 0.5s;
+}
+form button:hover{
+    background: #242565;
+    color: white;
+}

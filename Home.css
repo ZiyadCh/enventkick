@@ -1,12 +1,16 @@
 * {
   margin: 0;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  
 }
+
+
 body {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  
 }
 li {
   list-style: none;
@@ -98,9 +102,9 @@ header button a:hover {
   top: 91vh;
   width: 70%;
   display: grid;
-  grid-template-columns: 30% 30% 30%;
+  grid-template-columns: repeat(3,20%);
   justify-content: center;
-  grid-column-gap: 40px;
+  grid-column-gap: 10%;
 }
 .search label {
   color: white;
@@ -145,7 +149,23 @@ select {
   box-shadow: 0 0 10px gray;
   overflow: hidden;
   transition: 0.4s;
+  animation: appear linear ;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
 }
+@keyframes appear {
+  0%{
+    opacity: 0;
+    scale: 0.5; 
+    
+  }
+  100%{
+    opacity: 1;
+    scale: 1;
+    
+  }
+}
+
 
 .card:hover {
   transform: translateY(-10px);
@@ -211,7 +231,7 @@ select {
   display: flex;
   gap: 190px;
   align-items: center;
-  animation: carousel 5s linear infinite;
+  animation: carousel 10s linear infinite;
 }
 .b2 {
   display: flex;
@@ -219,7 +239,7 @@ select {
   align-items: center;
   gap: 200px;
   width: 80vw;
-  animation: bcarousel 5s linear infinite;
+  animation: bcarousel 10s linear infinite;
 }
 
 @keyframes carousel {
@@ -292,4 +312,51 @@ span {
   align-items: flex-end;
   width: 50vw;
   bottom: 0;
+}
+
+/* 
+/////////
+MOBILE
+//////////
+*/
+
+
+@media screen and (max-width:412px) {
+
+header > img{
+display: none;
+}
+header ul{
+  width: 100%;
+  justify-content: space-between;
+}
+header button{
+  transform: scale(50%);
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: -20px;
+}
+header button a{
+  padding: 0;
+  margin: 0;
+}
+.hero{
+flex-direction: column;
+}
+
+nav{
+width: 100%;
+overflow: hidden;
+}
+nav h2{
+  font-size: 18px;
+}
+
+.event{
+  width: 100vw;
+ 
+}
+.cardgrid{
+  grid-template-columns: min-content;
+}
 }

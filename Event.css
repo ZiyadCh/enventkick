@@ -13,7 +13,12 @@
     font-size: 300px;
     font-family: 'Edu VIC WA NT Beginner';
 }
-
+.event{
+  margin-top: 0;
+}
+nav{
+  padding: 40px;
+}
 header button a{
   padding: 30px;
 }

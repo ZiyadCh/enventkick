@@ -150,20 +150,6 @@ select {
   overflow: hidden;
   transition: 0.4s;
   animation: appear linear ;
-  animation-timeline: view();
-  animation-range: entry 0% cover 40%;
-}
-@keyframes appear {
-  0%{
-    opacity: 0;
-    scale: 0.5; 
-    
-  }
-  100%{
-    opacity: 1;
-    scale: 1;
-    
-  }
 }
 
 
@@ -174,13 +160,19 @@ select {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 5px;
+  gap: 16px;
+  margin: 8px;
   z-index: 1;
+}
+.date{
+  display: flex;
+  flex-direction:column;
+  justify-content: center;align-items: center;
 }
 .cardgrid {
   width: 100vw;
   justify-content: center;
-  gap: 30px;
+  gap: 32px;
   display: grid;
   grid-template-columns: min-content min-content min-content;
 }
@@ -313,6 +305,9 @@ span {
   width: 50vw;
   bottom: 0;
 }
+details{
+  display: none;
+}
 
 /* 
 /////////
@@ -323,23 +318,41 @@ MOBILE
 
 @media screen and (max-width:412px) {
 
-header > img{
-display: none;
-}
-header ul{
+details{
+  top: 0;
+  position: absolute;
+  display: grid;
+  background: transparent;
+  padding: 10px;
+  backdrop-filter: blur(60px);
   width: 100%;
-  justify-content: space-between;
 }
-header button{
-  transform: scale(50%);
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: -20px;
+
+
+header{
+  display: none;
 }
-header button a{
-  padding: 0;
-  margin: 0;
+
+details button {
+  border: solid white 2px;
+  border-radius: 25px;
+  color: white;
+  background-color: transparent;
+  padding: 5px 30px;
+  font-size: larger;
+  transition: 0.5s;
 }
+details button:hover {
+  background-color: white;
+  color: purple;
+}
+details button a {
+  padding: 30px;
+}
+details button a:hover {
+  color: #0a075f;
+}
+
 .hero{
 flex-direction: column;
 }

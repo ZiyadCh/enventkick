@@ -366,10 +366,13 @@ details button a:hover {
   justify-content: center;align-items: center;
 }
 .welcome img{
-  scale: 0.7;
+  scale: 50%;
 }
 .tm{
   font-size: 20px;
+}
+.hero > img{
+object-fit: cover;
 }
 
 .event nav{
